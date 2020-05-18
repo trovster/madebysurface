@@ -1,0 +1,94 @@
+body.homepage {
+  header {
+    padding-bottom: 3.5rem;
+
+    @media only screen and (min-width: map.get($breakpoints, "sm")) {
+      padding-bottom: 3.5rem;
+    }
+
+    @media only screen and (min-width: map.get($breakpoints, "xl")) and (min-height: 600px) {
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  section {
+    background: #f9f9f9;
+
+    &:nth-child(2n) {
+      background: #fff;
+    }
+
+    @media only screen and (min-width: map.get($breakpoints, "xl")) and (min-height: 600px) {
+      padding-top: 6.5rem;
+    }
+
+    @media only screen and (min-width: map.get($breakpoints, "md")) {
+      &.with-icon > .inner {
+        padding-left: 170px;
+      }
+
+      svg {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    }
+
+    @media only screen and (min-width: map.get($breakpoints, "xl")) {
+      > .inner {
+        min-height: 100vh;
+      }
+
+      .inner {
+        padding-left: 0;
+      }
+
+      svg {
+        position: relative;
+      }
+    }
+
+    @media only screen and (min-width: map.get($breakpoints, "xxl")) {
+      &.with-icon > .inner {
+        padding-left: 170px;
+      }
+
+      svg {
+        position: absolute;
+        top: -5px;
+      }
+    }
+
+    @media only screen and (min-width: map.get($breakpoints, "xl")) and (min-height: 600px) {
+      padding-left: $leftOffset;
+    }
+  }
+
+  @media only screen and (min-width: map.get($breakpoints, "xl")) and (min-height: 600px) {
+    main {
+      padding-top: 100vh;
+      padding-bottom: 75vh;
+
+      &::before,
+      &::after {
+        position: absolute;
+        top: 200px;
+        left: 50%;
+        display: block;
+        height: 400px;
+        width: 400px;
+        margin: 0 0 0 50px;
+        opacity: 0.1;
+        content: url(../img/icons/awesome/arrow-down.svg);
+      }
+
+      &::after {
+        top: auto;
+        bottom: 0;
+        transform: rotate(180deg);
+      }
+    }
+  }
+}

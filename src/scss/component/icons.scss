@@ -1,0 +1,39 @@
+.icons {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    display: inline-block;
+    margin: 0 20px 0 0;
+  }
+
+  img,
+  svg {
+    display: block;
+    width: 5rem;
+  }
+
+  &--small {
+    img,
+    svg {
+      width: 3rem;
+    }
+  }
+}
+
+.items {
+  display: flex;
+  flex-flow: wrap;
+  max-width: 65rem;
+  padding: 0;
+  margin: 0 -1rem 0;
+  list-style: none;
+
+  li {
+    position: relative;
+    width: 48%;
+    max-width: 30rem;
+    margin: 1%;
+  }
+}

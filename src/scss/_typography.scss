@@ -1,0 +1,90 @@
+h1, h2, h3, h4 {
+  font-family: "Graphic-web", sans-serif;
+  font-weight: 500;
+  color: #242424;
+}
+
+h1 {
+  font-size: 2.5rem;
+  line-height: 1;
+  letter-spacing: -0.05em;
+
+  @media only screen and (min-width: map.get($breakpoints, "sm")) {
+    font-size: 3rem;
+  }
+}
+
+h2 {
+  font-size: 2rem;
+  line-height: 1;
+  letter-spacing: -0.05em;
+
+  @media only screen and (min-width: map.get($breakpoints, "sm")) {
+    font-size: 2.5rem;
+  }
+}
+
+h3 {
+  font-size: 1.5rem;
+  line-height: 1;
+  letter-spacing: -0.04em;
+
+  @media only screen and (min-width: map.get($breakpoints, "sm")) {
+    font-size: 1.75rem;
+  }
+
+  + p {
+    margin-top: -1.25rem;
+  }
+}
+
+p {
+  margin: 0 0 1rem;
+  font-family: "Graphic-web", sans-serif;
+  font-size: 1.15rem;
+  color: map.get($colours, "light-gray");
+
+  @media only screen and (min-width: map.get($breakpoints, "sm")) {
+    font-size: 1.25rem;
+  }
+}
+
+strong {
+  font-weight: 600;
+}
+
+hr {
+  border: 0;
+  height: 1rem;
+  background: transparent;
+}
+
+blockquote {
+  margin: 1rem 0;
+  font-size: 3rem;
+  line-height: 1;
+  font-style: italic;
+  letter-spacing: -0.085em;
+
+  @media only screen and (min-width: map.get($breakpoints, "lg")) {
+    font-size: 4rem;
+  }
+
+  p {
+    position: relative;
+    font-size: inherit;
+  }
+
+  cite {
+    display: block;
+    margin: 1.5rem 0 0;
+    font-size: 1.5rem;
+    line-height: 1;
+    letter-spacing: -0.05em;
+    font-style: normal;
+  }
+
+  .org {
+    color: map.get($colours, "gray");
+  }
+}

@@ -1,0 +1,43 @@
+<!doctype html>
+<html dir="ltr" lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+        <title>{{ site.title }} — {{ site.summary }}</title>
+
+        <meta name="description" content="{{ meta.description }}" />
+        <meta name="keywords" content="{{ meta.keywords }}" />
+
+        <script type="text/javascript">
+            document.getElementsByTagName('html')[0].className += ' js';
+        </script>
+
+        <link rel="icon" href="/favicon.svg"/>
+        <link rel="stylesheet" href="/css/surface.css"/>
+    </head>
+
+    <body class="{{ bodyClass }}">
+        <header>
+            <h1><a href="/"><svg viewBox="0 0 489.14 112.77"><use xlink:href="/img/logo.svg#logo"></use></svg></a></h1>
+            <h2>{{ site.summary }}</h2>
+        </header>
+
+        <main>
+            <div class="inner">
+                {{ content | safe }}
+            </div>
+        </main>
+
+        <footer>
+            <h3><em class="fn">{{ site.author }}</em> <span class="tel">{{ site.telephone }}</span></h3>
+            <p><a href="mailto:{{ site.email }}" class="email">{{ site.email }}</a></p>
+
+            {% include "address.njk" %}
+        </footer>
+
+        <script src="/js/manifest.js"></script>
+        <script src="/js/vendor.js"></script>
+        <script src="/js/site.js"></script>
+    </body>
+</html>

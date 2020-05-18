@@ -1,0 +1,69 @@
+.logo {
+  overflow: visible;
+
+  path {
+    --stroke: 1;
+    --opacity: 100;
+
+    fill: #007fc3;
+    fill-opacity: var(--opacity);
+    stroke-width: var(--stroke);
+  }
+
+  path {
+    transition: all 200ms ease-in-out;
+    animation: logo 400ms 1200ms ease-in-out backwards;
+  }
+
+  &:hover path {
+    --stroke: 35;
+  }
+
+  .cursor {
+    --angle: 0deg;
+
+    fill: #fff;
+    stroke: var(--color-a);
+    transform: rotate(var(--angle));
+    transform-origin: center;
+    transform-box: fill-box;
+  }
+
+  .s {
+    fill: var(--color-s);
+    stroke: var(--color-s);
+  }
+  .u {
+    fill: var(--color-u);
+    stroke: var(--color-u);
+  }
+  .r {
+    fill: var(--color-r);
+    stroke: var(--color-r);
+  }
+  .f {
+    fill: var(--color-f);
+    stroke: var(--color-f);
+  }
+  .a {
+    fill: var(--color-a);
+    stroke: var(--color-a);
+  }
+  .c {
+    fill: var(--color-c);
+    stroke: var(--color-c);
+  }
+  .e {
+    fill: var(--color-e);
+    stroke: var(--color-e);
+  }
+}
+
+@keyframes logo {
+	0% {
+		stroke-width: 35;
+	}
+	100% {
+		stroke-width: 0;
+	}
+}

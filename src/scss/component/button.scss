@@ -1,0 +1,90 @@
+.button {
+  position: relative;
+  display: inline-block;
+  border-radius: 1rem;
+  text-decoration: none;
+  background: linear-gradient(
+    to right,
+    var(--color-s),
+    var(--color-u),
+    var(--color-r),
+    var(--color-f),
+    var(--color-a),
+    var(--color-c),
+    var(--color-e)
+  );
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    background: #fff;
+    border-radius: 12px;
+    border: 5px solid transparent;
+  }
+
+  &::after {
+    display: none;
+  }
+
+  > * {
+    position: relative;
+    z-index: 3;
+    display: block;
+    margin: 5px;
+    padding: 3rem 10px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: map.get($colours, "light-gray");
+    text-decoration: none;
+    background: linear-gradient(
+      to right,
+      var(--color-s),
+      var(--color-u),
+      var(--color-r),
+      var(--color-f),
+      var(--color-a),
+      var(--color-c),
+      var(--color-e)
+    );
+    border-radius: 0.7rem;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  &:hover > *,
+  &:focus > *,
+  &:active > * {
+    outline: 0;
+    color: map.get($colours, "white");
+    -webkit-text-fill-color: map.get($colours, "white");
+    background: linear-gradient(
+      to right,
+      var(--color-s),
+      var(--color-u),
+      var(--color-r),
+      var(--color-f),
+      var(--color-a),
+      var(--color-c),
+      var(--color-e)
+    );
+  }
+}
+
+.back {
+  color: map.get($colours, "gray");
+  margin: 15px 10px 0;
+  align-self: end;
+  order: -1;
+}
+.back:hover,
+.back:focus,
+.back:active {
+  color: map.get($colours, "dark-gray");
+}

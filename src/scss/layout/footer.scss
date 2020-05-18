@@ -1,0 +1,85 @@
+footer {
+  position: relative;
+  z-index: 4;
+  padding: 3.5rem 1.5rem 0;
+
+  @media only screen and (min-width: map.get($breakpoints, "sm")) {
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+  }
+
+  @media only screen and (min-width: map.get($breakpoints, "xl")) and (min-height: 600px) {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-bottom: 2rem;
+  }
+
+  h3 {
+    margin: 0 0 0.5rem;
+    font-size: 1.3rem;
+    font-weight: 400;
+
+    span {
+      margin-left: 1rem;
+    }
+
+    em {
+      font-style: normal;
+    }
+  }
+
+  p {
+    margin: 0;
+    padding: 0;
+  }
+
+  address {
+    margin: 1.5rem 0 0;
+    padding: 0;
+    font-size: 1rem;
+    color: map.get($colours, "light-gray");
+    font-style: normal;
+
+    span,
+    strong {
+      display: block;
+      white-space: nowrap;
+    }
+
+    .org {
+      color: map.get($colours, "dark-gray");
+      font-weight: 600;
+
+      &::after {
+        color: map.get($colours, "light-gray");
+        content: none;
+      }
+    }
+
+    @media only screen and (min-width: map.get($breakpoints, "sm")) {
+      span,
+      strong {
+        display: inline;
+      }
+      strong::after,
+      span::after {
+        content: ",";
+      }
+      span:last-child::after {
+        content: none;
+      }
+      .org::after {
+        content: " / ";
+      }
+    }
+
+    @media only screen and (min-width: map.get($breakpoints, "xl")) {
+      position: absolute;
+      top: 0;
+      left: $leftOffset;
+      padding-top: 4.25rem;
+    }
+  }
+}

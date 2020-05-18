@@ -1,0 +1,33 @@
+a {
+  position: relative;
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  border-bottom: 1px solid transparent;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: -2px;
+    height: 1px;
+    opacity: 0.25;
+    background: linear-gradient(
+      to right,
+      var(--color-s),
+      var(--color-u),
+      var(--color-r),
+      var(--color-f),
+      var(--color-a),
+      var(--color-c),
+      var(--color-e)
+    );
+  }
+
+  &:hover::after,
+  &:focus::after,
+  &:active::after {
+    opacity: 1;
+  }
+}
