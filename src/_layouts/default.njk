@@ -13,13 +13,13 @@
             document.getElementsByTagName('html')[0].className += ' js';
         </script>
 
-        <link rel="icon" href="/favicon.svg"/>
-        <link rel="stylesheet" href="/css/surface.css"/>
+        <link rel="icon" href="{{ "/favicon.svg" | url }}"/>
+        <link rel="stylesheet" href="{{ "/css/surface.css" | url }}"/>
     </head>
 
     <body class="{{ bodyClass }}">
         <header>
-            <h1><a href="/"><svg viewBox="0 0 489 112"><use xlink:href="/img/logo.svg#logo"></use></svg></a></h1>
+            <h1><a href="{{ "/" | url }}"><svg viewBox="0 0 489 112"><use xlink:href="{{ "/img/logo.svg#logo" | url }}"></use></svg></a></h1>
             <h2>{{ site.summary }}</h2>
         </header>
 
@@ -36,8 +36,8 @@
             {% include "address.njk" %}
         </footer>
 
-        <script src="/js/manifest.js"></script>
-        <script src="/js/vendor.js"></script>
-        <script src="/js/site.js"></script>
+        <script src="{{ "/js/manifest.js" | url }}"></script>
+        <script src="{{ "/js/vendor.js" | url }}"></script>
+        <script src="{{ "/js/site.js" | url }}"></script>
     </body>
 </html>
