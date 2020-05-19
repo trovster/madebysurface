@@ -1,7 +1,7 @@
 module.exports = {
-    module: {},
-    plugins: [],
-    resolve: {
-        alias: {}
-    }
+  module: {},
+  plugins: [],
+  resolve: {
+    alias: {}
+  }
 }
