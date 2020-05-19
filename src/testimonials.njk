@@ -1,21 +1,10 @@
 ---
 bodyClass: testimonials
 ---
+{% for testimonial in collections.testimonials | reverse %}
 <section class="testimonial">
     <div class="inner">
-        <blockquote class="vcard">
-            <p>A professional web developer that considers how to make content management easy for the end user.</p>
-            <cite class="fn"><span class="fn author">Tina Meigh</span>, <span class="org">Plinkfizz</span></cite>
-        </blockquote>
+        {{ testimonial.templateContent | safe }}
     </div>
 </section>
-
-<section class="testimonial">
-    <div class="inner">
-        <blockquote class="vcard">
-            <p>Trevor delivers excellent websites on time, always meets expectations and will talk through solutions
-            to overcome any website challenges to deliver the best result possible.</p>
-            <cite class="fn"><span class="fn author">Tina Meigh</span>, <span class="org">Plinkfizz</span></cite>
-        </blockquote>
-    </div>
-</section>
+{% endfor %}
