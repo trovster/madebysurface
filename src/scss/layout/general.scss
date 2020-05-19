@@ -3,11 +3,18 @@ body {
   position: relative;
   margin: 0;
   padding: 0;
-  font-family: "Graphic-web", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 16px;
   line-height: 1.375;
   color: map.get($colours, "dark-gray");
   background: map.get($colours, "white");
+}
+
+@supports (font-variation-settings: normal) {
+  html,
+  body {
+    font-family: "Inter var", sans-serif;
+  }
 }
 
 body {
