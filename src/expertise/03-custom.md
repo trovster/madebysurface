@@ -3,9 +3,8 @@ title: Custom Development
 key: development
 icon: /img/icons.svg#code
 permalink: '/custom/index.html'
+layout: expertise
 ---
-<svg viewBox="0 0 800 512" class="icon icon--{{ key }}"><use xlink:href="{{ icon }}"></use></svg>
-
 Having started off as the sole developer in a small design agency, I needed to provide a complete solution
 across the **full-stack** of web technologies. There are two main areas of web development;
 *server-side* and *client-side*.

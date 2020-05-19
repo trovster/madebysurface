@@ -1,0 +1,11 @@
+---
+layout: default
+bodyClass: expertise
+---
+<section class="expertise with-icon" data-viewport="{{ key }}">
+    <div class="inner">
+        <h2>{{ title }}</h2>
+        <svg viewBox="0 0 30 24" class="icon icon--{{ key }}"><use xlink:href="{{ icon }}"></use></svg>
+        {{ content | safe }}
+    </div>
+</section>

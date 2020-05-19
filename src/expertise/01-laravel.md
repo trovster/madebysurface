@@ -1,11 +1,10 @@
 ---
 title: Laravel Development
 key: laravel
-icon: /img/icons.svg#wordpress
+icon: /img/icons.svg#laravel
 permalink: '/laravel/index.html'
+layout: expertise
 ---
-<svg viewBox="0 0 30 24" class="icon icon--{{ key }}"><use xlink:href="{{ icon }}"></use></svg>
-
 I specialise in building bespoke web-based solutions. One of the tools I use is the [Laravel framework](https://laravel.com)</a>.
 This helps me build solutions that are robust and scalable with the best practices of PHP development.</p>
 
