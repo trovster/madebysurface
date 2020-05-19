@@ -1,0 +1,29 @@
+<!doctype html>
+<html dir="ltr" lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+        <title>{{ site.title }} — {{ site.summary }}</title>
+
+        <meta name="description" content="{{ meta.description }}" />
+        <meta name="keywords" content="{{ meta.keywords }}" />
+
+        <script type="text/javascript">
+            document.getElementsByTagName('html')[0].className += ' js';
+        </script>
+
+        <link rel="icon" href="/favicon.svg"/>
+        <link rel="stylesheet" href="/css/surface.css"/>
+    </head>
+
+    <body class="{{ bodyClass }}">
+        <a href="../" class="back"><span>Back</span></a>
+
+        <main>
+            <div class="inner">
+                {{ content | safe }}
+            </div>
+        </main>
+    </body>
+</html>

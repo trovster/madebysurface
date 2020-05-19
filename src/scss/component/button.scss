@@ -78,6 +78,10 @@
 }
 
 .back {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  z-index: 100;
   color: map.get($colours, "gray");
   margin: 15px 10px 0;
   align-self: end;
