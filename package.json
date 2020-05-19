@@ -8,7 +8,8 @@
     "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
     "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
     "serve": "cross-env ELEVENTY_ENV=development npx @11ty/eleventy --incremental --serve",
-    "build": "npm run production && npx @11ty/eleventy"
+    "build": "npm run production && npx @11ty/eleventy",
+    "deploy": "npm run build -- --pathprefix=/madebysurface/ && push-dir --dir=build --branch=gh-pages --force"
   },
   "repository": {
     "type": "git",
@@ -24,6 +25,7 @@
     "@11ty/eleventy": "^0.11.0",
     "cross-env": "^7.0.2",
     "laravel-mix": "^5.0.4",
+    "push-dir": "^0.4.1",
     "sass": "^1.26.5",
     "sass-loader": "^8.0.2",
     "vue-template-compiler": "^2.6.11"
