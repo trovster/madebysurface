@@ -3,20 +3,22 @@
   "version": "0.0.1",
   "description": "Website for madebysurface.co.uk",
   "homepage": "https://www.madebysurface.co.uk",
-  "main": "index.js",
   "scripts": {
-    "start": "npm run development && npm run serve",
+    "start": "npm run serve & npm run development -- --watch",
     "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "watch": "npm run development -- --watch",
     "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "serve": "cross-env ELEVENTY_ENV=development npx @11ty/eleventy --serve",
-    "build": "npm run production &&"
+    "serve": "cross-env ELEVENTY_ENV=development npx @11ty/eleventy --incremental --serve",
+    "build": "npm run production && npx @11ty/eleventy"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/trovster/madebysurface.git"
   },
-  "author": "Trevor Morris",
+  "author": {
+    "name": "Trevor Morris",
+    "email": "code@trovster.com",
+    "url": "https://www.trovster.com"
+  },
   "license": "ISC",
   "devDependencies": {
     "@11ty/eleventy": "^0.11.0",
