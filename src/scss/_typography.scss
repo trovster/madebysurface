@@ -62,13 +62,9 @@ hr {
 blockquote {
   margin: 1rem 0;
   font-size: 3rem;
-  line-height: 1;
+  line-height: 1.125;
   font-style: italic;
   letter-spacing: -0.085em;
-
-  @media only screen and (min-width: map.get($breakpoints, "lg")) {
-    font-size: 4rem;
-  }
 
   p {
     position: relative;
