@@ -1,4 +1,5 @@
 const site = require('./src/_data/site.json');
+const collections = require('./src/_data/collections.js');
 
 module.exports = function (config) {
     config.addPassthroughCopy({
@@ -8,19 +9,15 @@ module.exports = function (config) {
         'src/assets/favicon.ico': 'favicon.ico'
     });
 
-    // config.addCollection('expertise', collection => {
-    //     return [...collection.getFilteredByGlob('./src/expertise/*.md')]
-    //       .reverse()
-    //       .slice(0, 5);
-    //   });
-
-    config.addCollection('testimonials', collection => []);
-    config.addCollection('work', collection => []);
+    Object.keys(collections).forEach((collectionName) => {
+        config.addCollection(collectionName, collections[collectionName]);
+    });
 
     return {
         dir: {
             input: 'src',
             output: 'dist',
+            data: "_data",
             includes: "_includes",
             layouts: "_layouts"
         },
