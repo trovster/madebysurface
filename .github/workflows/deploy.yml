@@ -15,7 +15,7 @@ jobs:
         run: |
           npm ci
           npm test
-          npm run build -- --pathprefix=/madebysurface/
+          cross-env GITHUB_URL=https://trovster.github.io npm run build -- --pathprefix=/madebysurface/
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@releases/v3
