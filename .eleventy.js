@@ -5,7 +5,11 @@ module.exports = function (config) {
     'src/assets/img': 'img/',
     'src/assets/fonts': 'fonts/',
     'src/assets/favicon.svg': 'favicon.svg',
-    'src/assets/favicon.ico': 'favicon.ico'
+    'src/assets/favicon.ico': 'favicon.ico',
+    'src/assets/icon.png': 'icon.png',
+    'src/assets/safari-pinned-tab.svg': 'safari-pinned-tab.svg',
+    'src/assets/browserconfig.xml': 'browserconfig.xml',
+    'src/assets/site.webmanifest': 'site.webmanifest'
   })
 
   Object.keys(collections).forEach((collectionName) => {
