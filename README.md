@@ -28,6 +28,4 @@ To run the tests, you run;
 
 ## Deploying
 
-A GitHub action updates the `gh-pages` branch with the latest build.
-
-You can also run `npm run deploy` to push changes without going through GitHub.
+A GitHub action updates the `gh-pages` branch with the latest build when a commit is made to the `master` branch.

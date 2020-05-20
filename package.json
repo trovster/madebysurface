@@ -13,7 +13,6 @@
     "test": "",
     "lint": "npm run lint:js",
     "lint:js": "npx standard  --fix",
-    "deploy": "npm run build -- --pathprefix=/madebysurface/ && push-dir --dir=build --branch=gh-pages --force",
     "release": "standard-version --tag-prefix="
   },
   "repository": {
@@ -34,7 +33,6 @@
     "@11ty/eleventy": "^0.11.0",
     "cross-env": "^7.0.2",
     "laravel-mix": "^5.0.4",
-    "push-dir": "^0.4.1",
     "sass": "^1.26.5",
     "sass-loader": "^8.0.2",
     "standard": "^14.3.3",
