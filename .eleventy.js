@@ -1,4 +1,7 @@
 const collections = require('./src/_data/collections.js')
+const absoluteUrl = require('./src/_filters/absoluteUrl')
+const byKey = require('./src/_filters/byKey')
+const bySlug = require('./src/_filters/bySlug')
 
 module.exports = function (config) {
   config.addPassthroughCopy({
@@ -16,13 +19,11 @@ module.exports = function (config) {
     config.addCollection(collectionName, collections[collectionName])
   })
 
-  config.addFilter('byKey', (collection, key) => {
-    return collection.filter(item => item.data.key === key).pop()
-  })
+  config.addFilter('absoluteUrl', (href, base) => absoluteUrl(href, base))
 
-  config.addFilter('bySlug', (collection, slug) => {
-    return collection.filter(item => item.data.page.fileSlug === slug).pop()
-  })
+  config.addFilter('byKey', (collection, key) => byKey(collection, key))
+
+  config.addFilter('bySlug', (collection, slug) => bySlug(collection, slug))
 
   config.addShortcode('icon', (data) => {
     return `<svg viewBox="0 0 30 24" class="icon icon--${data.key}"><use xlink:href="${data.icon}"></use></svg>`
