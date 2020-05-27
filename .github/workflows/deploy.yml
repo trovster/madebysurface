@@ -15,7 +15,7 @@ jobs:
         run: |
           npm ci
           npm test
-          ELEVENTY_ENV=https://trovster.github.io npm run build -- --pathprefix=/madebysurface/
+          GITHUB_URL=https://trovster.github.io npm run build -- --pathprefix=/madebysurface/
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@releases/v3
