@@ -1,6 +1,4 @@
 name: Build and Deploy
-env:
-  GITHUB_URL: https://trovster.github.io
 on:
   push:
     branches: [ master ]
@@ -17,7 +15,7 @@ jobs:
         run: |
           npm ci
           npm test
-          npm run build -- --pathprefix=/madebysurface/
+          ELEVENTY_ENV=https://trovster.github.io npm run build -- --pathprefix=/madebysurface/
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@releases/v3
