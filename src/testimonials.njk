@@ -1,7 +1,7 @@
 ---
 bodyClass: testimonials
 ---
-{% for testimonial in collections.testimonials | reverse %}
+{% for testimonial in collections.testimonials %}
 <section class="testimonials">
     <div class="inner">
         {{ testimonial.templateContent | safe }}
