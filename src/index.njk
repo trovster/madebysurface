@@ -4,8 +4,10 @@ bodyClass: homepage scrolling
 {% set laravel = (collections.expertise | byKey('laravel')) %}
 {% set wordpress = (collections.expertise | byKey('wordpress')) %}
 {% set development = (collections.expertise | byKey('development')) %}
-{% set testimonial1 = (collections.testimonials | bySlug('01-plinkfizz-tina-meigh')) %}
-{% set testimonial2 = (collections.testimonials | bySlug('02-james-wade')) %}
+{% set testimonial1 = (collections.testimonials | bySlug('03-tim-webley')) %}
+{% set testimonial2 = (collections.testimonials | bySlug('04-david-gallimore')) %}
+{% set testimonial3 = (collections.testimonials | bySlug('02-james-wade')) %}
+{% set testimonial4 = (collections.testimonials | bySlug('01-tina-meigh')) %}
 
 <section class="expertise with-icon" data-viewport="{{ laravel.data.key }}">
     <div class="inner">
@@ -40,5 +42,17 @@ bodyClass: homepage scrolling
         <h2>{{ development.data.title }}</h2>
         {% icon development.data %}
         {{ development.templateContent | safe }}
+    </div>
+</section>
+
+<section class="testimonial">
+    <div class="inner">
+        {{ testimonial3.templateContent | safe }}
+    </div>
+</section>
+
+<section class="testimonial">
+    <div class="inner">
+        {{ testimonial4.templateContent | safe }}
     </div>
 </section>
