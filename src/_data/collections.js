@@ -1,11 +1,14 @@
 module.exports = {
   expertise: (collection) => {
-    return collection.getFilteredByGlob(['./src/expertise/*.md'])
+    return collection.getFilteredByGlob(['./src/_collections/expertise/*.md'])
+  },
+  playground: (collection) => {
+    return collection.getFilteredByGlob(['./src/_collections/playground/*.md'])
   },
   testimonials: (collection) => {
-    return collection.getFilteredByGlob(['./src/testimonials/*.md']).sort((a, b) => {
-      const aNumber = parseInt(a.data.page.fileSlug, 10)
-      const bNumber = parseInt(b.data.page.fileSlug, 10)
+    return collection.getFilteredByGlob(['./src/_collections/testimonials/*.md']).sort((a, b) => {
+      const aNumber = a.data.order || parseInt(a.data.page.fileSlug, 10)
+      const bNumber = b.data.order || parseInt(b.data.page.fileSlug, 10)
 
       if (aNumber < bNumber) {
         return -1

@@ -6,7 +6,7 @@
 
         <meta property="og:title" content="{{ site.title }}"/>
         <meta property="og:description" name="description" content="{{ meta.description }}"/>
-        <meta property="og:image" content="{{ "/icon.png" | url | absoluteUrl(site.baseUrl) }}"/>
+        <meta property="og:image" content="{{ "/icon.png" | url | absoluteUrl(config.baseUrl) }}"/>
         <meta name="twitter:card" content="summary"/>
         <meta name="twitter:site" content="@madebysurface"/>
         <meta name="keywords" content="{{ meta.keywords }}"/>
@@ -21,9 +21,9 @@
             document.getElementsByTagName('html')[0].className += ' js';
         </script>
 
-        <link rel="icon" href="{{ "/favicon.svg" | url | absoluteUrl(site.baseUrl) }}"/>
-        <link rel="apple-touch-icon" href="{{ "/icon.png" | url | absoluteUrl(site.baseUrl) }}" sizes="180x180"/>
-        <link rel="mask-icon" href="{{ "/safari-pinned-tab.svg" | url | absoluteUrl(site.baseUrl) }}" color="#5bbad5"/>
+        <link rel="icon" href="{{ "/favicon.svg" | url | absoluteUrl(config.baseUrl) }}"/>
+        <link rel="apple-touch-icon" href="{{ "/icon.png" | url | absoluteUrl(config.baseUrl) }}" sizes="180x180"/>
+        <link rel="mask-icon" href="{{ "/safari-pinned-tab.svg" | url | absoluteUrl(config.baseUrl) }}" color="#5bbad5"/>
         <link rel="manifest" href="{{ "/site.webmanifest" | url }}"/>
         <link rel="stylesheet" href="{{ "/css/surface.css" | url }}"/>
     </head>

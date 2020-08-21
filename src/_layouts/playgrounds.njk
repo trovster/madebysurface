@@ -1,0 +1,12 @@
+---
+layout: default
+---
+<section>
+    <div class="inner">
+        <ul class="items">
+            {% for playground in playgrounds %}
+            <li class="button"><a href="{{ playground.url }}">{{ playground.data.title }}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
+</section>

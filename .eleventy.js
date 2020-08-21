@@ -5,6 +5,7 @@ const bySlug = require('./src/_filters/bySlug')
 
 module.exports = function (config) {
   config.addPassthroughCopy({
+    'src/admin': 'admin/',
     'src/assets/img': 'img/',
     'src/assets/fonts': 'fonts/',
     'src/assets/favicon.svg': 'favicon.svg',
@@ -20,9 +21,7 @@ module.exports = function (config) {
   })
 
   config.addFilter('absoluteUrl', (href, base) => absoluteUrl(href, base))
-
   config.addFilter('byKey', (collection, key) => byKey(collection, key))
-
   config.addFilter('bySlug', (collection, slug) => bySlug(collection, slug))
 
   config.addShortcode('icon', (data) => {

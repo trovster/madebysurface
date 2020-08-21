@@ -1,9 +1,8 @@
 ---
+order: 2
 title: WordPress Development
 key: wordpress
 icon: /img/icons.svg#wordpress
-permalink: '/wordpress/index.html'
-layout: expertise
 ---
 If you need a conventional public-facing company-focused website, then [WordPress](https://wordpress.org)
 provides a brilliant starting point. The open source content management system powers an incredibly large portion of the

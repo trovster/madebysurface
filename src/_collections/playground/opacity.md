@@ -1,9 +1,8 @@
 ---
-layout: playground
+order: 2
+title: Logo Opacity
 bodyClass: playground playground--opacity
 ---
-{% include "../assets/img/logo.svg" %}
-
 <div class="controls">
     <div>
         <input class="opacity" type="range" min="0" max="100" value="0" step="10" />

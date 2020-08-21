@@ -1,9 +1,8 @@
 ---
-layout: playground
+order: 1
+title: Logo Stroke
 bodyClass: playground playground--stroke
 ---
-{% include "../assets/img/logo.svg" %}
-
 <div class="controls">
     <div>
         <input class="stroke" type="range" min="1" max="50" value="1" />

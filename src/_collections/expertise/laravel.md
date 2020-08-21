@@ -1,9 +1,8 @@
 ---
+order: 1
 title: Laravel Development
 key: laravel
 icon: /img/icons.svg#laravel
-permalink: '/laravel/index.html'
-layout: expertise
 ---
 I specialise in building bespoke web-based solutions. One of the tools I use is the [Laravel framework](https://laravel.com)</a>.
 This helps me build solutions that are robust and scalable with the best practices of PHP development.</p>
