@@ -1,9 +1,8 @@
 ---
-layout: playground
+order: 3
+title: Logo Colours
 bodyClass: playground playground--colours
 ---
-{% include "../assets/img/logo.svg" %}
-
 <div class="controls">
     <ul>
         <li><input type="color" name="s" value="#05668D" /></li>

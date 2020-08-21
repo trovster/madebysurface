@@ -1,0 +1,4 @@
+{
+  "layout": "playground",
+  "permalink": "/playground/{{ page.fileSlug }}/index.html"
+}

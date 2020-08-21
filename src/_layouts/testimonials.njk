@@ -1,7 +1,7 @@
 ---
-bodyClass: testimonials
+layout: default
 ---
-{% for testimonial in collections.testimonials %}
+{% for testimonial in testimonials %}
 <section class="testimonials">
     <div class="inner">
         {{ testimonial.templateContent | safe }}

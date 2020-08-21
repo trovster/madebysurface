@@ -1,9 +1,9 @@
 ---
+order: 3
 title: Custom Development
 key: development
 icon: /img/icons.svg#code
-permalink: '/custom/index.html'
-layout: expertise
+permalink: /custom/index.html
 ---
 Having started off as the sole developer in a small design agency, I needed to provide a complete solution
 across the **full-stack** of web technologies. There are two main areas of web development;

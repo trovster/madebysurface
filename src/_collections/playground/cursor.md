@@ -1,10 +1,8 @@
 ---
-layout: playground
+order: 4
+title: Logo Cursor
 bodyClass: playground playground--cursor
 ---
-
-{% include "../assets/img/logo.svg" %}
-
 <script type="text/javascript">
     const offset = 40
     const cursor = document.querySelector('.logo .cursor')
