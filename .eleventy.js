@@ -25,7 +25,7 @@ module.exports = function (config) {
   config.addFilter('bySlug', (collection, slug) => bySlug(collection, slug))
 
   config.addShortcode('icon', (data) => {
-    return `<svg viewBox="0 0 30 24" class="icon icon--${data.key}"><use xlink:href="${data.icon}"></use></svg>`
+    return `<svg viewBox="0 0 30 24" class="icon icon--${data.key}"><use xlink:href="${config.getFilter('url')(data.icon, '/')}"></use></svg>`
   })
 
   return {
