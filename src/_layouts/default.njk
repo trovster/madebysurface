@@ -24,14 +24,14 @@
         <link rel="icon" href="{{ "/favicon.svg" | url | absoluteUrl(config.baseUrl) }}"/>
         <link rel="apple-touch-icon" href="{{ "/icon.png" | url | absoluteUrl(config.baseUrl) }}" sizes="180x180"/>
         <link rel="mask-icon" href="{{ "/safari-pinned-tab.svg" | url | absoluteUrl(config.baseUrl) }}" color="#5bbad5"/>
-        <link rel="manifest" href="{{ "/site.webmanifest" | url }}"/>
-        <link rel="stylesheet" href="{{ "/css/surface.css" | url }}"/>
+        <link rel="manifest" href="{{ "/site.webmanifest" | url | absoluteUrl(config.baseUrl) }}"/>
+        <link rel="stylesheet" href="{{ "/css/surface.css" | url | absoluteUrl(config.baseUrl) }}"/>
     </head>
 
     <body class="{{ bodyClass }}">
         <header>
             <h1>
-                <a href="{{ "/" | url }}">
+                <a href="{{ "/" | url | absoluteUrl(config.baseUrl) }}">
                     {% include "../assets/img/logo.svg" %}
                 </a>
             </h1>
@@ -51,8 +51,8 @@
             {% include "address.njk" %}
         </footer>
 
-        <script src="{{ "/js/manifest.js" | url }}"></script>
-        <script src="{{ "/js/vendor.js" | url }}"></script>
-        <script src="{{ "/js/site.js" | url }}"></script>
+        <script src="{{ "/js/manifest.js" | url | absoluteUrl(config.baseUrl) }}"></script>
+        <script src="{{ "/js/vendor.js" | url | absoluteUrl(config.baseUrl) }}"></script>
+        <script src="{{ "/js/site.js" | url | absoluteUrl(config.baseUrl) }}"></script>
     </body>
 </html>

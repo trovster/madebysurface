@@ -13,8 +13,8 @@
             document.getElementsByTagName('html')[0].className += ' js';
         </script>
 
-        <link rel="icon" href="{{ "/favicon.svg" | url }}"/>
-        <link rel="stylesheet" href="{{ "/css/surface.css" | url }}"/>
+        <link rel="icon" href="{{ "/favicon.svg" | url | absoluteUrl(config.baseUrl) }}"/>
+        <link rel="stylesheet" href="{{ "/css/surface.css" | url | absoluteUrl(config.baseUrl) }}"/>
     </head>
 
     <body class="{{ bodyClass }}">
