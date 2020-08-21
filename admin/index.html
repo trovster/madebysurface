@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Content Manager</title>
+        <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    </head>
+    <body>
+        <!-- Include the script that builds the page and powers Netlify CMS -->
+        <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
+        <script>
+            CMS.registerPreviewStyle("/css/site.css");
+        </script>
+        <script>
+            var TestimonialPreview = createClass({
+                render: function () {
+                    var entry = this.props.entry;
+                    var title = entry.getIn(['data', 'title']);
+
+                    return h('div', {"className": "x"},
+                        h('div', {"className": "work__detail"},
+                            h('h3', {"className": "work__title"}, title),
+                            h('div', {"className": "work__description"}, this.props.widgetFor('body'))
+                        ),
+                    );
+                }
+            });
+
+            CMS.registerPreviewTemplate("testimonial", TestimonialPreview);
+        </script>
+    </body>
+</html>
