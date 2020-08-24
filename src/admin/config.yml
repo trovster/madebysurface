@@ -39,6 +39,7 @@ collections:
       - {label: "Order", name: "order", widget: "number"}
       - {label: "Author", name: "author", widget: "string"}
       - {label: "Company", name: "org", widget: "string", required: false}
+      - {label: "Enabled", name: "enabled", widget: "boolean"}
       - {label: "Body", name: "body", widget: "markdown"}
 
   - name: "expertise"

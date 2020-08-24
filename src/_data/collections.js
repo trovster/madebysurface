@@ -6,7 +6,7 @@ module.exports = {
     return collection.getFilteredByGlob(['./src/_collections/playground/*.md'])
   },
   testimonials: (collection) => {
-    return collection.getFilteredByGlob(['./src/_collections/testimonials/*.md']).sort((a, b) => {
+    return collection.getFilteredByGlob(['./src/_collections/testimonials/*.md']).filter(t => t.data.enabled).sort((a, b) => {
       const aNumber = a.data.order || parseInt(a.data.page.fileSlug, 10)
       const bNumber = b.data.order || parseInt(b.data.page.fileSlug, 10)
 
