@@ -3,7 +3,7 @@ env:
   GITHUB_URL: https://trovster.github.io
 on:
   push:
-    branches: [ master ]
+    branches: [ master, develop ]
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
