@@ -2,58 +2,51 @@
 layout: default
 bodyClass: homepage scrolling
 ---
-{% set laravel = (collections.expertise | byKey('laravel')) %}
-{% set wordpress = (collections.expertise | byKey('wordpress')) %}
-{% set development = (collections.expertise | byKey('development')) %}
-{% set testimonial1 = (collections.testimonials | bySlug('03-tim-webley')) %}
-{% set testimonial2 = (collections.testimonials | bySlug('04-david-gallimore')) %}
-{% set testimonial3 = (collections.testimonials | bySlug('02-james-wade')) %}
-{% set testimonial4 = (collections.testimonials | bySlug('01-tina-meigh')) %}
-
-<section class="expertise with-icon" data-viewport="{{ laravel.data.key }}">
+{% set expertise = (collections.expertise | byKey('laravel')) %}
+<section class="expertise with-icon" data-viewport="{{ expertise.data.key }}">
     <div class="inner">
-        <h2>{{ laravel.data.title }}</h2>
-        {% icon laravel.data %}
-        {{ laravel.templateContent | safe }}
+        {% include "expertise.njk" %}
     </div>
 </section>
 
 <section class="testimonial">
     <div class="inner">
-        {{ testimonial1.templateContent | safe }}
+        {% set testimonial = (collections.testimonials | bySlug(testimonial_1)) %}
+        {% include "testimonial.njk" %}
     </div>
 </section>
 
-<section class="expertise with-icon" data-viewport="{{ wordpress.data.key }}">
+{% set expertise = (collections.expertise | byKey('wordpress')) %}
+<section class="expertise with-icon" data-viewport="{{ expertise.data.key }}">
     <div class="inner">
-        <h2>{{ wordpress.data.title }}</h2>
-        {% icon wordpress.data %}
-        {{ wordpress.templateContent | safe }}
-    </div>
-</section>
-
-<section class="testimonial">
-    <div class="inner">
-        {{ testimonial2.templateContent | safe }}
-    </div>
-</section>
-
-<section class="expertise with-icon" data-viewport="{{ development.data.key }}">
-    <div class="inner">
-        <h2>{{ development.data.title }}</h2>
-        {% icon development.data %}
-        {{ development.templateContent | safe }}
+        {% include "expertise.njk" %}
     </div>
 </section>
 
 <section class="testimonial">
     <div class="inner">
-        {{ testimonial3.templateContent | safe }}
+        {% set testimonial = (collections.testimonials | bySlug(testimonial_2)) %}
+        {% include "testimonial.njk" %}
+    </div>
+</section>
+
+{% set expertise = (collections.expertise | byKey('development')) %}
+<section class="expertise with-icon" data-viewport="{{ expertise.data.key }}">
+    <div class="inner">
+        {% include "expertise.njk" %}
     </div>
 </section>
 
 <section class="testimonial">
     <div class="inner">
-        {{ testimonial4.templateContent | safe }}
+        {% set testimonial = (collections.testimonials | bySlug(testimonial_3)) %}
+        {% include "testimonial.njk" %}
+    </div>
+</section>
+
+<section class="testimonial">
+    <div class="inner">
+        {% set testimonial = (collections.testimonials | bySlug(testimonial_4)) %}
+        {% include "testimonial.njk" %}
     </div>
 </section>

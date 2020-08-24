@@ -25,6 +25,10 @@ collections:
         delete: false
         fields:
           - {label: "Title", name: "title", widget: "string"}
+          - {label: "Testimonial #1", name: "testimonial_1", widget: "relation", collection: "testimonials", valueField: "{{slug}}", searchFields: ["author"], displayFields: ["{{author}} – ({{slug}})"]}
+          - {label: "Testimonial #2", name: "testimonial_2", widget: "relation", collection: "testimonials", valueField: "{{slug}}", searchFields: ["author"], displayFields: ["{{author}} – ({{slug}})"]}
+          - {label: "Testimonial #3", name: "testimonial_3", widget: "relation", collection: "testimonials", valueField: "{{slug}}", searchFields: ["author"], displayFields: ["{{author}} – ({{slug}})"]}
+          - {label: "Testimonial #4", name: "testimonial_4", widget: "relation", collection: "testimonials", valueField: "{{slug}}", searchFields: ["author"], displayFields: ["{{author}} – ({{slug}})"]}
 
   - name: "testimonials"
     label: "Testimonials"

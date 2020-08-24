@@ -35,7 +35,7 @@ const PlaygroundPreview = createClass({
     const title = entry.getIn(['data', 'title'])
 
     return h('div', { className: 'playground' },
-      h('h2', {}, title),
+      h('h2', {}, title)
       // h('div', {}, this.props.widgetFor('body'))
     )
   }
