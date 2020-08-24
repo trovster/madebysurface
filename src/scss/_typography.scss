@@ -58,12 +58,14 @@ hr {
   background: transparent;
 }
 
-blockquote {
+blockquote,
+.testimonial {
   margin: 1rem 0;
   font-size: 2rem;
   line-height: 1.125;
   font-style: italic;
   letter-spacing: -0.0375em;
+  color: map.get($colours, "light-gray");
 
   @media only screen and (min-width: map.get($breakpoints, "sm")) {
     font-size: 2.5rem;

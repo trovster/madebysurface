@@ -4,7 +4,7 @@ layout: default
 {% for testimonial in testimonials %}
 <section class="testimonials">
     <div class="inner">
-        {{ testimonial.templateContent | safe }}
+        {% include "testimonial.njk" %}
     </div>
 </section>
 {% endfor %}

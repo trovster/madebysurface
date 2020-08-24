@@ -4,5 +4,4 @@ author: Tina Meigh
 org: Plinkfizz
 enabled: true
 ---
-> A professional web developer that considers how to make content management easy for the end user.
-<cite class="vcard fn"><span class="fn author">Tina Meigh</span>, <span class="org">Plinkfizz</span></cite>
+A professional web developer that considers how to make content management easy for the end user.

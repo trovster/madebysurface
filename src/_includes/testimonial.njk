@@ -1,0 +1,12 @@
+<blockquote class="testimonial">
+    {{ testimonial.data.content | safe }}
+
+    <cite class="vcard">
+        {% if testimonial.data.org %}
+        <span class="fn author">{{ testimonial.data.author }}</span>,
+        <span class="org">{{ testimonial.data.org }}</span>
+        {% else %}
+        <span class="fn author">{{ testimonial.data.author }}</span>
+        {% endif %}
+    </cite>
+</div>
