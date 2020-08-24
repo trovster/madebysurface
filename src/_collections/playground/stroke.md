@@ -1,6 +1,7 @@
 ---
 order: 1
 title: Logo Stroke
+enabled: true
 bodyClass: playground playground--stroke
 ---
 <div class="controls">

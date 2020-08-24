@@ -1,6 +1,7 @@
 ---
 order: 3
 title: Logo Colours
+enabled: true
 bodyClass: playground playground--colours
 ---
 <div class="controls">

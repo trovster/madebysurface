@@ -67,6 +67,7 @@ collections:
     sortableFields: ["order", "title"]
     fields:
       - {label: "Order", name: "order", widget: "number"}
+      - {label: "Enabled", name: "enabled", widget: "boolean"}
       - {label: "Title", name: "title", widget: "string"}
 
   - label: "Configuration"

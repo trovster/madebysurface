@@ -3,7 +3,7 @@ module.exports = {
     return collection.getFilteredByGlob(['./src/_collections/expertise/*.md'])
   },
   playground: (collection) => {
-    return collection.getFilteredByGlob(['./src/_collections/playground/*.md'])
+    return collection.getFilteredByGlob(['./src/_collections/playground/*.md']).filter(t => t.data.enabled)
   },
   testimonials: (collection) => {
     return collection.getFilteredByGlob(['./src/_collections/testimonials/*.md']).filter(t => t.data.enabled).sort((a, b) => {

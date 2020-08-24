@@ -29,5 +29,18 @@ const ExpertisePreview = createClass({
   }
 })
 
+const PlaygroundPreview = createClass({
+  render: function () {
+    const entry = this.props.entry
+    const title = entry.getIn(['data', 'title'])
+
+    return h('div', { className: 'playground' },
+      h('h2', {}, title),
+      // h('div', {}, this.props.widgetFor('body'))
+    )
+  }
+})
+
 CMS.registerPreviewTemplate('testimonials', TestimonialPreview)
 CMS.registerPreviewTemplate('expertise', ExpertisePreview)
+CMS.registerPreviewTemplate('playground', PlaygroundPreview)

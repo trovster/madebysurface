@@ -1,6 +1,7 @@
 ---
 order: 4
 title: Logo Cursor
+enabled: true
 bodyClass: playground playground--cursor
 ---
 <script type="text/javascript">

@@ -1,6 +1,7 @@
 ---
 order: 2
 title: Logo Opacity
+enabled: true
 bodyClass: playground playground--opacity
 ---
 <div class="controls">
