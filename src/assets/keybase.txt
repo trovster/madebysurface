@@ -1,0 +1,75 @@
+==================================================================
+https://keybase.io/trovster
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://madebysurface.co.uk
+  * I am trovster (https://keybase.io/trovster) on keybase.
+  * I have a public key with fingerprint 6ED8 D248 B73A B094 AEB4  157D 3CE5 D94A FB8C 85B9
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01203f1da339e758e5646659ebb32c1db2c131091beab99a8f2a5b00fdf78ed6ce4e0a",
+      "fingerprint": "6ed8d248b73ab094aeb4157d3ce5d94afb8c85b9",
+      "host": "keybase.io",
+      "key_id": "3ce5d94afb8c85b9",
+      "kid": "01011d55be72129f1628de5db4069738acf6da9b6ceeb81da52c326f0204f30de2130a",
+      "uid": "e44cbcc9cc384d47d7d4fc0606bafb19",
+      "username": "trovster"
+    },
+    "service": {
+      "hostname": "madebysurface.co.uk",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1605719811,
+  "expire_in": 157680000,
+  "prev": "afdc0eb39399c4b34d3ab01ddbad8d83738bac0286f3496d227b4a4d3cd5de6c",
+  "seqno": 13,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.1.13
+Comment: https://keybase.io/crypto
+
+yMNxAnicbZJ9TNVVGMcvSjUxUglni8ni51UaQ/y9v9yRWWIDHDHtWjiF6++8/Lg/
+gXsv900Y6gaikMBCw2FGwzTkRZy9SInZROOlFc3NjdktwiItZLgLNwFFrnQu0/86
+f5yz5+z7fJ7v85zTHbnQEBGWfMeX/qj6YGfYT1cbPQZLx3sLSyhgR8WUqYTKw/MH
+zkfY5bbk6YgyUTTD0pzGIJXjFCwJMhZEXhQFBQPAsZBBgGwcQysMwCpQFFXWWFUA
+NK0hTZIxEiHmMa1SiZSm23Kx0+HUbW6CFTGSEcvLQOJUQCu8igHPCBLiIBYQCTUg
+Q1kACkm02l2hDGIOqC6cpNvJHQks8/b+R//UN80wSBAAlliGVTRGZGVEtICnRUXi
+ZBVqIlIVQAxiIJP+BBZyrKjRLM1rHI0wy3Dzvj3zOMzzEECoQMjJPOIlJCFeg7RI
+i4DUZkJ1PS7stKkFmKjdTrvX5cZOal8iRW69OsShwYY6eaIoUBEGxS6PU1MhToL2
+JE8eQTicdrcd2vOJwOp2O1ymEMBd7Ahl7MHA8oRlAboNkXGSDC92unS7jTIxRAnd
+egjOiLQgMYrMMIkULnLoTmzRQwpBEmWarFAd7CVIVUOQxoBTOEWBPOB4FHoMBiGg
+kteROTImoEKalUWN4xURsawEeJWoIBIQFiEV6q7QZidsjvhUcwnTpefaVLfHial9
+167uDDeERRiefWZB6J8ZIhYtffr76LElj5OT364eb9+wYiSWK3bTWTHxYyf27v1q
+VN529PLnjd+Pxr0e+NHh431fbL8SaPhdPrn/59K6wZfOZ64+E8hv++scfMd63JQQ
+CR7heK1x+uzgg7SP8jqMcYxyP+hr73wsdHU1q1WrO6xv3mt3LOs2ZcZV8uvw0Myn
+s5cmUlDWHnNs60Xj4bpXou91mdkbwwscJeBU3SaOztrty8iK6nu+VmhYZfz7PP3J
+/j7zostZ+GaHa67e39+fNLH8X2tNuLWn7ePJDOMdudVXXdFQMT07ddIcfHcoYep4
+UnrTxENjalrMIV9T2+27ganNdTn+wtruDZmTPyz+M/e1r/01lrMPxz6Irtx4KPXD
+gD423biiuSvF1BJs9+dsrs3YOvHdxSbz+srfdkkjqxJy6otOX1l3/cJ4qatlR8Ks
+Y+P77XdNM+fK9aiYltu3bq4ddZyxHzn4RnTsc4tT+K19jpmB5Uumer+cqT/W5h9Y
+ExUY90UHm3vLy04/GPxn527vt0Jw20D6C9Vxx4Ivmnb057WuqcwYi1z6a+x04/0D
+cWl4+Nro5Nro/ltbvFp26aaGAdvQWzVYWwkPn3CUYb8+HZ7SJFd1LjOoRwur1pdX
+RBUZ58ZTd83G9E5uSbhQFmYW01ae6jrSM/xNdvyrrT2mbOFlCVJUWUHN3HaPif2j
+ZeSXtJSWsMgDNy59dr3zP0tw1sM=
+=zr/J
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/trovster
+
+==================================================================

@@ -13,7 +13,8 @@ module.exports = function (config) {
     'src/assets/icon.png': 'icon.png',
     'src/assets/safari-pinned-tab.svg': 'safari-pinned-tab.svg',
     'src/assets/browserconfig.xml': 'browserconfig.xml',
-    'src/assets/site.webmanifest': 'site.webmanifest'
+    'src/assets/site.webmanifest': 'site.webmanifest',
+    'src/assets/keybase.txt': 'keybase.txt'
   })
 
   Object.keys(collections).forEach((collectionName) => {
