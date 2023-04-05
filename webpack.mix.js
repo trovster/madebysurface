@@ -10,4 +10,4 @@ mix.sass('src/scss/site.scss', 'css/surface.css')
     processCssUrls: false
   })
 
-mix.js('src/js/site.js', 'js').extract([])
+mix.js('src/js/site.js', 'js')
