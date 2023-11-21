@@ -2,8 +2,7 @@ name: Build and Deploy
 env:
   GITHUB_URL: https://trovster.github.io
 on:
-  push:
-    branches: [ master, develop ]
+  workflow_dispatch:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
