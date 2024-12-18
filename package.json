@@ -1,8 +1,8 @@
 {
   "name": "madebysurface",
   "version": "2.2.0",
-  "description": "Website for madebysurface.co.uk",
-  "homepage": "https://www.madebysurface.co.uk",
+  "description": "Archive for madebysurface.co.uk",
+  "homepage": "https://madebysurface.trovster.com",
   "private": true,
   "scripts": {
     "start": "npm run serve & npm run development -- --watch",
